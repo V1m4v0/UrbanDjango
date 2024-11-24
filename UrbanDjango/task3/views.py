@@ -8,7 +8,7 @@ def shop(request):
     context = {
         'button_back': button_back,
     }
-    return render(request, 'third_task/Magazine.html', context)
+    return render(request, 'third_task/shop.html', context)
 
 def basket(request):
     button_back = 'Вернуться обратно'
