@@ -18,13 +18,16 @@ from django.contrib import admin
 from django.urls import path
 from task2.views import func_template, class_template
 from task4.views import shop, platform, basket, menu
-
+from task5.views import sign_up_by_django, sign_up_by_html
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('func_temp/', func_template),
-    path('class_temp/', class_template.as_view()),
-    path('shop/', shop),
-    path('platform/', platform),
-    path('basket/', basket),
-    path('menu/', menu)
+    # path('admin/', admin.site.urls),
+    # path('func_temp/', func_template),
+    # path('class_temp/', class_template.as_view()),
+    # path('shop/', shop),
+    # path('platform/', platform),
+    # path('basket/', basket),
+    # path('menu/', menu),
+    path('', sign_up_by_django),
+    path('register_html/', sign_up_by_html),
+
 ]
